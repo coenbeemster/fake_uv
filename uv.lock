@@ -1,0 +1,36 @@
+version = 1
+revision = 5
+requires-python = ">=3.14"
+
+[[package]]
+name = "click"
+version = "8.5.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/45/37/edbf1b0707709013c0cf2e8317e03d97ed29bf4cac709fe328904ae92a38/click-8.5.1.tar.gz", hash = "sha256:9bbfada76703fd1d784b83eea012e3e8c6a001a876543ef104fa56aaaeb072b4", size = 399151, upload-time = "2026-11-06T17:37:01.021Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/31/7d/164b7ffc8624fe9efb4221bf9af485d5c1e41b9ae118045d2b6dc5457d8b/click-8.5.1-py3-none-any.whl", hash = "sha256:8bb5376d2006950386f8c6427613334a2acadc5f559cb80e638d00b4df957e37", size = 126163, upload-time = "2026-11-06T17:36:59.287Z" },
+]
+
+[[package]]
+name = "clipp"
+version = "1.3.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/38/49/ca0c3af821eb44500243f85f5c8f77c1b436b87a9b018b912ca1810a437e/clipp-1.3.2.tar.gz", hash = "sha256:6c75dbf2ac01dced19f840d94dc6d2fd8a199d027183b30122257325f09dafd4", size = 1669357, upload-time = "2024-07-16T06:04:09.324Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8c/58/d2205c93fff4e74e8adf302766f916e110a49927c300e840427db716bde3/clipp-1.3.2-py3-none-any.whl", hash = "sha256:c57e87b458d5d29b46a37bfc7fd1047af2e342526e59bdbfd179a86858d9b7a7", size = 47846, upload-time = "2024-07-16T06:03:54.801Z" },
+]
+
+[[package]]
+name = "fake-uv"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "click" },
+    { name = "clipp" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "click", specifier = ">=8.5.1" },
+    { name = "clipp", specifier = ">=1.3.2" },
+]
